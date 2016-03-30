@@ -6,6 +6,10 @@
 //  Copyright © 2016年 盛志雄. All rights reserved.
 //
 
+/*
+ 自定义一个子线程ZSWorkThread，每次点击按钮都会执行子线程中定义的事件
+ **/
+
 #import "RunLoopViewController.h"
 #import "ZSWorkThread.h"
 
@@ -20,8 +24,9 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(100, 100, 100, 100);
+    button.frame = CGRectMake(100, 100, 200, 50);
     button.backgroundColor = [UIColor blueColor];
+    [button setTitle:@"自定义InputSource" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(buttonClicked) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:button];

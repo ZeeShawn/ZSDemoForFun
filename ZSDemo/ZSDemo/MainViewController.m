@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "UIView+Layout.h"
 
 @interface MainViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;
@@ -29,7 +30,7 @@
 {
     return @[
              @[@"1.RunLoop",@"RunLoopViewController"],
-             
+             @[@"2.CoreAnimation",],
              ];
 }
 
@@ -62,8 +63,22 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSArray *module = [[self modules] objectAtIndex:indexPath.row];
-    
     [self.navigationController pushViewController:[NSClassFromString([module lastObject]) new] animated:YES];
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return @"删除";
 }
 
 @end

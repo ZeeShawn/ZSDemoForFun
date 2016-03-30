@@ -17,6 +17,7 @@
 		A7ADD8961C7AE1A000BBDF93 /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7ADD8951C7AE1A000BBDF93 /* RunLoopViewController.m */; };
 		A7ADD89A1C7AFAC600BBDF93 /* ZSWorkThread.m in Sources */ = {isa = PBXBuildFile; fileRef = A7ADD8991C7AFAC600BBDF93 /* ZSWorkThread.m */; };
 		A7ADD89D1C7AFB6B00BBDF93 /* ZSInputSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A7ADD89C1C7AFB6B00BBDF93 /* ZSInputSource.m */; };
+		A7ADD8A21C7C0A2F00BBDF93 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = A7ADD8A11C7C0A2F00BBDF93 /* UIView+Layout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		A7ADD8991C7AFAC600BBDF93 /* ZSWorkThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSWorkThread.m; sourceTree = "<group>"; };
 		A7ADD89B1C7AFB6B00BBDF93 /* ZSInputSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSInputSource.h; sourceTree = "<group>"; };
 		A7ADD89C1C7AFB6B00BBDF93 /* ZSInputSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSInputSource.m; sourceTree = "<group>"; };
+		A7ADD8A01C7C0A2F00BBDF93 /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		A7ADD8A11C7C0A2F00BBDF93 /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 		A7ADD85D1C7ADC3700BBDF93 /* ZSDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A7ADD89F1C7C07B700BBDF93 /* CommonCategory */,
+				A7ADD89E1C7C055E00BBDF93 /* CoreAnimation */,
 				A7ADD8971C7AF6F300BBDF93 /* RunLoop */,
 				A7ADD8611C7ADC3700BBDF93 /* AppDelegate.h */,
 				A7ADD8621C7ADC3700BBDF93 /* AppDelegate.m */,
@@ -158,6 +163,22 @@
 				A7ADD89C1C7AFB6B00BBDF93 /* ZSInputSource.m */,
 			);
 			name = RunLoop;
+			sourceTree = "<group>";
+		};
+		A7ADD89E1C7C055E00BBDF93 /* CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CoreAnimation;
+			sourceTree = "<group>";
+		};
+		A7ADD89F1C7C07B700BBDF93 /* CommonCategory */ = {
+			isa = PBXGroup;
+			children = (
+				A7ADD8A01C7C0A2F00BBDF93 /* UIView+Layout.h */,
+				A7ADD8A11C7C0A2F00BBDF93 /* UIView+Layout.m */,
+			);
+			name = CommonCategory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +314,7 @@
 				A7ADD8631C7ADC3700BBDF93 /* AppDelegate.m in Sources */,
 				A7ADD89D1C7AFB6B00BBDF93 /* ZSInputSource.m in Sources */,
 				A7ADD8931C7ADD1B00BBDF93 /* MainViewController.m in Sources */,
+				A7ADD8A21C7C0A2F00BBDF93 /* UIView+Layout.m in Sources */,
 				A7ADD8601C7ADC3700BBDF93 /* main.m in Sources */,
 				A7ADD89A1C7AFAC600BBDF93 /* ZSWorkThread.m in Sources */,
 			);

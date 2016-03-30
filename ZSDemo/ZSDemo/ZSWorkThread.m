@@ -22,9 +22,8 @@
     
     self.inputSource = [[ZSInputSource alloc] init];
     [self.inputSource addToRunLopp:_currentRunLoop];
-    
     while (!self.isCancelled) {
-        [self reallyDoWork];
+        [self reallyDoWork:@(1)];
         [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
     }
 }
@@ -34,9 +33,9 @@
     [self.inputSource fireInputSourceOnRunLoop:_currentRunLoop];
 }
 
-- (void)reallyDoWork
+- (void)reallyDoWork:(NSNumber *)index
 {
-    NSLog(@"I'm working in thread:%@",[NSThread currentThread]);
+    NSLog(@"I'm working with %@",index);
 }
 
 @end

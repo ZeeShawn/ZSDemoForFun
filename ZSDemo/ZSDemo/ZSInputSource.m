@@ -11,17 +11,17 @@
 
 void schedule(void *info, CFRunLoopRef rl, CFStringRef mode)
 {
-    
+    NSLog(@"runLoopSourceSchedule");
 }
 
 void cancel(void *info, CFRunLoopRef rl, CFStringRef mode)
 {
-    
+    NSLog(@"runLoopSourceCancel");
 }
               
 void perform(void *info)
 {
-    
+    NSLog(@"runLoopSourcePerform");
 }
 
 @interface ZSInputSource ()
