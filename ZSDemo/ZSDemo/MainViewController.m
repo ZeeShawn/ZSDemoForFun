@@ -31,7 +31,6 @@
     return @[
              @[@"1.RunLoop",@"RunLoopViewController"],
              @[@"2.CoreAnimation",],
-             @[@"3.NoExtendTest",@"ExtendViewController"],
              @[@"3.GCD多线程读写与锁对比",@"ZSTestMultiThreadViewController"],
              ];
 }
