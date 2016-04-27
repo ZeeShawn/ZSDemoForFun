@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A70FCC491CBBF03D00254B18 /* ZSTestMultiThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A70FCC481CBBF03D00254B18 /* ZSTestMultiThreadViewController.m */; };
+		A72705FD1CAE5057006FFCD1 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A72705FC1CAE5057006FFCD1 /* BaseViewController.m */; };
+		A72706001CAE51BF006FFCD1 /* ExtendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A72705FF1CAE51BF006FFCD1 /* ExtendViewController.m */; };
+		A72C134C1CC4CC0700080E02 /* ZSLock.m in Sources */ = {isa = PBXBuildFile; fileRef = A72C134B1CC4CC0700080E02 /* ZSLock.m */; };
+		A74FBA621CBF466700A88318 /* ThreadSafeCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A74FBA611CBF466700A88318 /* ThreadSafeCache.m */; };
+		A74FBA651CC085A400A88318 /* ReadWriteLock.m in Sources */ = {isa = PBXBuildFile; fileRef = A74FBA641CC085A400A88318 /* ReadWriteLock.m */; };
 		A7ADD8601C7ADC3700BBDF93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7ADD85F1C7ADC3700BBDF93 /* main.m */; };
 		A7ADD8631C7ADC3700BBDF93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7ADD8621C7ADC3700BBDF93 /* AppDelegate.m */; };
 		A7ADD86B1C7ADC3700BBDF93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7ADD86A1C7ADC3700BBDF93 /* Assets.xcassets */; };
@@ -38,6 +44,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A70FCC471CBBF03D00254B18 /* ZSTestMultiThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSTestMultiThreadViewController.h; sourceTree = "<group>"; };
+		A70FCC481CBBF03D00254B18 /* ZSTestMultiThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTestMultiThreadViewController.m; sourceTree = "<group>"; };
+		A72705FB1CAE5057006FFCD1 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		A72705FC1CAE5057006FFCD1 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		A72705FE1CAE51BF006FFCD1 /* ExtendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendViewController.h; sourceTree = "<group>"; };
+		A72705FF1CAE51BF006FFCD1 /* ExtendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendViewController.m; sourceTree = "<group>"; };
+		A72C134A1CC4CC0700080E02 /* ZSLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSLock.h; sourceTree = "<group>"; };
+		A72C134B1CC4CC0700080E02 /* ZSLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSLock.m; sourceTree = "<group>"; };
+		A74FBA601CBF466700A88318 /* ThreadSafeCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadSafeCache.h; sourceTree = "<group>"; };
+		A74FBA611CBF466700A88318 /* ThreadSafeCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadSafeCache.m; sourceTree = "<group>"; };
+		A74FBA631CC085A400A88318 /* ReadWriteLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadWriteLock.h; sourceTree = "<group>"; };
+		A74FBA641CC085A400A88318 /* ReadWriteLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadWriteLock.m; sourceTree = "<group>"; };
 		A7ADD85B1C7ADC3700BBDF93 /* ZSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7ADD85F1C7ADC3700BBDF93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A7ADD8611C7ADC3700BBDF93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -88,6 +106,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A70FCC4A1CBBF04300254B18 /* MultiThreadTest */ = {
+			isa = PBXGroup;
+			children = (
+				A70FCC471CBBF03D00254B18 /* ZSTestMultiThreadViewController.h */,
+				A70FCC481CBBF03D00254B18 /* ZSTestMultiThreadViewController.m */,
+				A74FBA601CBF466700A88318 /* ThreadSafeCache.h */,
+				A74FBA611CBF466700A88318 /* ThreadSafeCache.m */,
+				A74FBA631CC085A400A88318 /* ReadWriteLock.h */,
+				A74FBA641CC085A400A88318 /* ReadWriteLock.m */,
+				A72C134A1CC4CC0700080E02 /* ZSLock.h */,
+				A72C134B1CC4CC0700080E02 /* ZSLock.m */,
+			);
+			name = MultiThreadTest;
+			sourceTree = "<group>";
+		};
+		A72705FA1CAE4FE6006FFCD1 /* NoExtendTest */ = {
+			isa = PBXGroup;
+			children = (
+				A72705FB1CAE5057006FFCD1 /* BaseViewController.h */,
+				A72705FC1CAE5057006FFCD1 /* BaseViewController.m */,
+				A72705FE1CAE51BF006FFCD1 /* ExtendViewController.h */,
+				A72705FF1CAE51BF006FFCD1 /* ExtendViewController.m */,
+			);
+			name = NoExtendTest;
+			sourceTree = "<group>";
+		};
 		A7ADD8521C7ADC3700BBDF93 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +155,8 @@
 		A7ADD85D1C7ADC3700BBDF93 /* ZSDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A70FCC4A1CBBF04300254B18 /* MultiThreadTest */,
+				A72705FA1CAE4FE6006FFCD1 /* NoExtendTest */,
 				A7ADD89F1C7C07B700BBDF93 /* CommonCategory */,
 				A7ADD89E1C7C055E00BBDF93 /* CoreAnimation */,
 				A7ADD8971C7AF6F300BBDF93 /* RunLoop */,
@@ -311,11 +357,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7ADD8961C7AE1A000BBDF93 /* RunLoopViewController.m in Sources */,
+				A70FCC491CBBF03D00254B18 /* ZSTestMultiThreadViewController.m in Sources */,
+				A74FBA651CC085A400A88318 /* ReadWriteLock.m in Sources */,
+				A72705FD1CAE5057006FFCD1 /* BaseViewController.m in Sources */,
+				A72C134C1CC4CC0700080E02 /* ZSLock.m in Sources */,
 				A7ADD8631C7ADC3700BBDF93 /* AppDelegate.m in Sources */,
 				A7ADD89D1C7AFB6B00BBDF93 /* ZSInputSource.m in Sources */,
 				A7ADD8931C7ADD1B00BBDF93 /* MainViewController.m in Sources */,
+				A72706001CAE51BF006FFCD1 /* ExtendViewController.m in Sources */,
 				A7ADD8A21C7C0A2F00BBDF93 /* UIView+Layout.m in Sources */,
 				A7ADD8601C7ADC3700BBDF93 /* main.m in Sources */,
+				A74FBA621CBF466700A88318 /* ThreadSafeCache.m in Sources */,
 				A7ADD89A1C7AFAC600BBDF93 /* ZSWorkThread.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

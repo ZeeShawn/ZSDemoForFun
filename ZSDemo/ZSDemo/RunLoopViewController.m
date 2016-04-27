@@ -29,10 +29,17 @@
     [button setTitle:@"自定义InputSource" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(buttonClicked) forControlEvents:UIControlEventTouchUpInside];
     
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(1);
+    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+    
+    NSLog(@"work");
+    
+    dispatch_semaphore_signal(semaphore);
+    
+    
     [self.view addSubview:button];
     self.workThread = [[ZSWorkThread alloc] init];
     [self.workThread start];
-    
 }
 
 - (void)didReceiveMemoryWarning {
